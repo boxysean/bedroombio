@@ -132,8 +132,8 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Futura";
-  font-size: 13px;
+  font-family: "Futura", "Ubuntu";
+  font-size: 14pt;
   line-height: 18px;
   color: #ffffff;
   background: #333333 url('../img/topleft-graphic.png') no-repeat left top;
@@ -322,12 +322,12 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: "Futura";
-  font-size: 13px;
+  font-family: "Futura", "Ubuntu";
+  font-size: 14pt;
   line-height: 18px;
 }
 p small {
-  font-size: 11px;
+  font-size: 12pt;
   color: #999999;
 }
 .lead {
@@ -528,7 +528,7 @@ code,
 pre {
   padding: 0 3px 2px;
   font-family: Menlo, Monaco, "Courier New", monospace;
-  font-size: 12px;
+  font-size: 13pt;
   color: #333333;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -544,7 +544,7 @@ pre {
   display: block;
   padding: 8.5px;
   margin: 0 0 9px;
-  font-size: 12.025px;
+  font-size: 12.950000000000001pt;
   line-height: 18px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -583,9 +583,9 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 27px;
-  font-size: 19.5px;
+  font-size: 21pt;
   line-height: 36px;
-  color: #333333;
+  color: #ffffff;
   border: 0;
   border-bottom: 1px solid #eee;
 }
@@ -598,7 +598,7 @@ input,
 button,
 select,
 textarea {
-  font-size: 13px;
+  font-size: 14pt;
   font-weight: normal;
   line-height: 18px;
 }
@@ -606,12 +606,12 @@ input,
 button,
 select,
 textarea {
-  font-family: "Futura";
+  font-family: "Futura", "Ubuntu";
 }
 label {
   display: block;
   margin-bottom: 5px;
-  color: #333333;
+  color: #ffffff;
 }
 input,
 textarea,
@@ -619,10 +619,10 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: 18px;
+  height: 27px;
   padding: 4px;
   margin-bottom: 9px;
-  font-size: 13px;
+  font-size: 14pt;
   line-height: 18px;
   color: #555555;
   border: 1px solid #cccccc;
@@ -1162,12 +1162,12 @@ legend + .control-group {
 }
 .form-horizontal .control-label {
   float: left;
-  width: 140px;
+  width: 190px;
   padding-top: 5px;
   text-align: right;
 }
 .form-horizontal .controls {
-  margin-left: 160px;
+  margin-left: 210px;
   /* Super jank IE7 fix to ensure the inputs in .input-append and input-prepend don't inherit the margin of the parent, in this case .controls */
 
   *display: inline-block;
@@ -1179,7 +1179,7 @@ legend + .control-group {
   margin-bottom: 0;
 }
 .form-horizontal .form-actions {
-  padding-left: 160px;
+  padding-left: 210px;
 }
 table {
   max-width: 100%;
@@ -1967,7 +1967,7 @@ table .span24 {
   *zoom: 1;
   padding: 4px 10px 4px;
   margin-bottom: 0;
-  font-size: 13px;
+  font-size: 14pt;
   line-height: 18px;
   color: #333333;
   text-align: center;
@@ -2049,7 +2049,7 @@ table .span24 {
 }
 .btn-large {
   padding: 9px 14px;
-  font-size: 15px;
+  font-size: 16pt;
   line-height: normal;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -2060,7 +2060,7 @@ table .span24 {
 }
 .btn-small {
   padding: 5px 9px;
-  font-size: 11px;
+  font-size: 12pt;
   line-height: 16px;
 }
 .btn-small [class^="icon-"] {
@@ -2068,7 +2068,7 @@ table .span24 {
 }
 .btn-mini {
   padding: 2px 6px;
-  font-size: 11px;
+  font-size: 12pt;
   line-height: 14px;
 }
 .btn-primary,
@@ -3566,7 +3566,7 @@ a.thumbnail:hover {
 }
 .label {
   padding: 1px 4px 2px;
-  font-size: 10.998px;
+  font-size: 11.844pt;
   font-weight: bold;
   line-height: 13px;
   color: #ffffff;
@@ -3614,7 +3614,7 @@ a.thumbnail:hover {
 }
 .badge {
   padding: 1px 9px 2px;
-  font-size: 12.025px;
+  font-size: 12.950000000000001pt;
   font-weight: bold;
   white-space: nowrap;
   color: #ffffff;
@@ -4001,6 +4001,8 @@ a.thumbnail:hover {
   margin: 10px;
   background: #ffffff;
   color: #000000;
+  float: left;
+  width: 220px;
 }
 .polaroid img {
   padding: 0;
@@ -4016,8 +4018,8 @@ a.thumbnail:hover {
   -khtml-border-radius: 10px;
 }
 .sidebar {
-  padding-top: 400px;
-  width: 400px;
+  padding: 400px 0 100px;
+  width: 480px;
   float: left;
 }
 .main {
@@ -4029,22 +4031,22 @@ a.thumbnail:hover {
   text-align: justify;
 }
 .script {
-  font-size: 125%;
+  font-size: 15px;
   line-height: 27px;
   font-family: 'Oleo Script', cursive;
 }
 .bigger {
-  font-size: 175%;
+  font-size: 21px;
   line-height: 36px;
   letter-spacing: 0.3em;
 }
 .bedroom {
-  font-size: 350%;
+  font-size: 42px;
   line-height: 36px;
   letter-spacing: 0.3em;
 }
 .bio {
-  font-size: 700%;
+  font-size: 84px;
   line-height: 72px;
   letter-spacing: 0.3em;
 }

@@ -8,27 +8,21 @@
 
 <body>
 
-  <div class="container-fluid">
-    <div class="row-fluid">
-      <div class="sidebar span4">
-        <!-- sidebar -->
-        <div class="title">
-          <p class="center bedroom">BEDROOM</p>
-          <hr />
-          <p class="center bio">BIO</p>
-          <hr />
-          <p class="bigger">A PUBLIC VIEW OF PERSONAL SPACE.</p>
-          <p class="script">What don't you show the world about yourself that we can see in a picture of your bedroom?</p>
-          <hr />
-          <p>Submit | About</p>
-        </div>
-      </div>
-      <div class="span8">
-        {% block content %}
-        {% endblock %}
-      </div>
+  <div class="sidebar">
+    <div class="title">
+      <p class="center bedroom">BEDROOM</p>
+      <hr />
+      <p class="center bio">BIO</p>
+      <hr />
+      <p class="bigger">A PUBLIC VIEW OF PERSONAL SPACE.</p>
+      <p class="script">What don't you show the world about yourself that we can see in a picture of your bedroom?</p>
+      <hr />
+      <p><a href="/">Photos</a> | <a href="/submit">Submit</a> | <a href="/about">About</a></p>
     </div>
   </div>
+
+  {% block content %}
+  {% endblock %}
 
 <!--  <script type="text/javascript">
 
@@ -44,6 +38,13 @@
   })();
 
 </script>-->
+
+  <script src="{{STATIC_URL}}js/jquery.js"></script>
+  <script src="{{STATIC_URL}}js/bootstrap-modal.js"></script>
+  <script src="{{STATIC_URL}}js/bootstrap-transition.js"></script>
+
+  {% block scripts %}
+  {% endblock %}
 
 </body>
 

@@ -1,6 +1,48 @@
 {% extends 'base.html' %}
 
 {% block content %}
-submission process
+  <form class="form-horizontal" style="padding-top: 4em;" method="post" enctype="multipart/form-data"  action="/submit/picture">
+    <fieldset>
+<!--      <legend>Legend text</legend>-->
+      <div class="control-group">
+        <label class="control-label" for="picture_upload">Picture</label>
+        <div class="controls">
+          <input class="input-file" id="picture_upload" type="file" />
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <div id="picture_upload_info"></div>
+  </div>
+
+  <div id="picture_upload_display">
+    <ul id="image-list">
+    </ul>
+  </div>
+
+  <form class="form-horizontal">
+    <fieldset>
+      <div class="control-group">
+        <label class="control-label" for="about">About your room</label>
+        <div class="controls">
+          <textarea class="span4" id="about" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label" for="zipcode">Zip code</label>
+        <div class="controls">
+          <input type="text" class="span2" id="zipcode">
+        </div>
+    </div>
+    <div class="form-actions">
+      <button type="submit" class="btn btn-primary">Submit my room</button>
+    </div>
+    </fieldset>
+  </form>
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{STATIC_URL}}js/upload.js"></script>
 {% endblock %}
 

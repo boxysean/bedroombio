@@ -25,7 +25,7 @@ legend {
   margin-bottom: @baseLineHeight * 1.5;
   font-size: @baseFontSize * 1.5;
   line-height: @baseLineHeight * 2;
-  color: @grayDark;
+  color: @textColor;
   border: 0;
   border-bottom: 1px solid #eee;
 
@@ -55,7 +55,7 @@ textarea {
 label {
   display: block;
   margin-bottom: 5px;
-  color: @grayDark;
+  color: @textColor;
 }
 
 // Inputs, Textareas, Selects
@@ -65,7 +65,7 @@ select,
 .uneditable-input {
   display: inline-block;
   width: 210px;
-  height: @baseLineHeight;
+  height: @baseLineHeight*1.5;
   padding: 4px;
   margin-bottom: 9px;
   font-size: @baseFontSize;
@@ -531,13 +531,13 @@ legend + .control-group {
   // Float the labels left
   .control-label {
     float: left;
-    width: 140px;
+    width: 190px;
     padding-top: 5px;
     text-align: right;
   }
   // Move over all input controls and content
   .controls {
-    margin-left: 160px;
+    margin-left: 210px;
     /* Super jank IE7 fix to ensure the inputs in .input-append and input-prepend don't inherit the margin of the parent, in this case .controls */
     *display: inline-block;
     *margin-left: 0;
@@ -550,6 +550,6 @@ legend + .control-group {
   }
   // Move over buttons in .form-actions to align with .controls
   .form-actions {
-    padding-left: 160px;
+    padding-left: 210px;
   }
 }
