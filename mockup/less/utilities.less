@@ -23,14 +23,8 @@
 }
 
 .polaroid {
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  -khtml-border-radius: 20px;
-
-  -webkit-box-shadow: 5px 5px 8px 0px @grayDark;
-  -moz-box-shadow: 5px 5px 8px 0px @grayDark;
-  box-shadow: 5px 5px 8px 0px @grayDark;
+  .border-radius(20px);
+  .box-shadow(5px 5px 8px 0px @grayDark);
 
   padding: 10px 0px 0px 10px;
   margin: 10px;
@@ -55,8 +49,10 @@
 }
 
 .sidebar {
-  min-width: 325px;
-  padding-top: 200px;
+//  min-width: 325px;
+  padding-top: 400px;
+  width: 400px;
+  float: left;
 }
 
 .main {
@@ -73,7 +69,7 @@
   font-size: 125%;
   line-height: @baseLineHeight * 1.5;
 //  letter-spacing: 0.3em;
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Oleo Script', cursive;
 }
 
 .bigger {
