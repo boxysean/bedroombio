@@ -1,0 +1,52 @@
+<html>
+
+<head>
+  <title>Bedroom Bio</title>
+  <link rel="stylesheet" href="{{STATIC_URL}}css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oleo+Script" type="text/css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="sidebar span4">
+        <!-- sidebar -->
+        <div class="title">
+          <p class="center bedroom">BEDROOM</p>
+          <hr />
+          <p class="center bio">BIO</p>
+          <hr />
+          <p class="bigger">A PUBLIC VIEW OF PERSONAL SPACE.</p>
+          <p class="script">What don't you show the world about yourself that we can see in a picture of your bedroom?</p>
+          <hr />
+          <p>Submit | About</p>
+        </div>
+      </div>
+      <div class="span8">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+  </div>
+
+<!--  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30195395-1']);
+  _gaq.push(['_setDomainName', 'boxysean.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>-->
+
+</body>
+
+</html>
+
+
