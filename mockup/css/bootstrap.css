@@ -132,11 +132,11 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura";
   font-size: 13px;
   line-height: 18px;
-  color: #333333;
-  background-color: #ffffff;
+  color: #ffffff;
+  background: #bd795a url('../img/topleft-graphic.png') no-repeat left top;
 }
 a {
   color: #0088cc;
@@ -322,7 +322,7 @@ a:hover {
 }
 p {
   margin: 0 0 9px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura";
   font-size: 13px;
   line-height: 18px;
 }
@@ -606,7 +606,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Futura";
 }
 label {
   display: block;
@@ -3987,4 +3987,68 @@ a.thumbnail:hover {
 }
 .invisible {
   visibility: hidden;
+}
+.polaroid {
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -khtml-border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 8px 0px #333333;
+  -moz-box-shadow: 5px 5px 8px 0px #333333;
+  box-shadow: 5px 5px 8px 0px #333333;
+  padding: 10px 0px 0px 10px;
+  margin: 10px;
+  background: #ffffff;
+  color: #000000;
+}
+.polaroid img {
+  padding: 0;
+  margin: 0;
+}
+.polaroid p {
+  padding: 0.5em 0.5em 0.1em 0.5em;
+}
+.rounded {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -khtml-border-radius: 10px;
+}
+.sidebar {
+  min-width: 325px;
+  padding-top: 200px;
+}
+.main {
+  padding-top: 10px;
+}
+.title {
+  width: 325px;
+  margin: 0 auto;
+  text-align: justify;
+}
+.script {
+  font-size: 125%;
+  line-height: 27px;
+  font-family: 'Kaushan Script', cursive;
+}
+.bigger {
+  font-size: 175%;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+}
+.bedroom {
+  font-size: 350%;
+  line-height: 36px;
+  letter-spacing: 0.3em;
+}
+.bio {
+  font-size: 700%;
+  line-height: 72px;
+  letter-spacing: 0.3em;
+}
+.center {
+  text-align: center;
+}
+.topleft {
+  background: #bd795a url('../img/topleft-graphic.png') no-repeat left top;
 }
