@@ -10,6 +10,7 @@ urlpatterns = patterns('',
     (r'^submit$', 'bedroom.views.submit'),
     (r'^about$', 'bedroom.views.about'),
     (r'^submit/picture$', 'bedroom.views.upload_picture'),
+    (r'^submit/bedroom$', 'bedroom.views.submit_bedroom'),
 
 #    url(r'^help/$', direct_to_template, {'template': 'help.html'}),
 #

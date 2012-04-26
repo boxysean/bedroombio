@@ -143,3 +143,5 @@ LOGGING = {
         }
     }
 }
+
+IMAGE_UPLOAD_FOLDER = "/root/workspace/bedroombio/upload/"

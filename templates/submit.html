@@ -1,5 +1,9 @@
 {% extends 'base.html' %}
 
+{% block css %}
+  <link rel="stylesheet" href="{{STATIC_URL}}css/jquery.Jcrop.css" type="text/css" />
+{% endblock %}
+
 {% block content %}
   <form class="form-horizontal" style="padding-top: 4em;" method="post" enctype="multipart/form-data"  action="/submit/picture">
     <fieldset>
@@ -8,31 +12,35 @@
         <label class="control-label" for="picture_upload">Picture</label>
         <div class="controls">
           <input class="input-file" id="picture_upload" type="file" />
+          <span id="picture_upload_info"></span>
+          <div class="alert alert-error" id="picture_upload_error" style="display:none">Photo resolution should be greater than 600x450</div>
+          <div id="picture_upload_display" style="display:none"></div>
+          <div id="picture_upload_placeholder"></div>
+          <div class="alert alert-info" id="picture_upload_crop_dialog" style="display:none">Please crop your photo</div>
         </div>
       </div>
     </fieldset>
   </form>
 
-  <div id="picture_upload_info"></div>
-  </div>
-
-  <div id="picture_upload_display">
-    <ul id="image-list">
-    </ul>
-  </div>
-
-  <form class="form-horizontal">
-    <fieldset>
+  <form class="form-horizontal" method="post" action="/submit/bedroom">
+   <fieldset>
+      <input type="hidden" id="picture_file" name="picture_file" />
+      <input type="hidden" id="picture_crop_x" name="picture_crop_x" />
+      <input type="hidden" id="picture_crop_y" name="picture_crop_y" />
+      <input type="hidden" id="picture_crop_w" name="picture_crop_w" />
+      <input type="hidden" id="picture_crop_h" name="picture_crop_h" />
       <div class="control-group">
         <label class="control-label" for="about">About your room</label>
         <div class="controls">
-          <textarea class="span4" id="about" rows="3"></textarea>
+          <textarea class="span8" id="description" name="description" rows="5"></textarea>
+          <span class="help-block" id="description_remaining"></span>
         </div>
       </div>
       <div class="control-group">
         <label class="control-label" for="zipcode">Zip code</label>
         <div class="controls">
-          <input type="text" class="span2" id="zipcode">
+          <input type="text" class="span2" id="zipcode" name="zipcode" />
+          <span class="help-block">New York City zip codes only</span>
         </div>
     </div>
     <div class="form-actions">
@@ -44,5 +52,7 @@
 
 {% block scripts %}
   <script src="{{STATIC_URL}}js/upload.js"></script>
+  <script src="{{STATIC_URL}}js/spin.min.js"></script>
+  <script src="{{STATIC_URL}}js/jquery.Jcrop.min.js"></script>
 {% endblock %}
 
