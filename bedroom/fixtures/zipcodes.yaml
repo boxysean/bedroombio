@@ -1,0 +1,995 @@
+- model: bedroom.zipcode
+  pk: 1
+  fields:
+    zipcode: 11201
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 2
+  fields:
+    zipcode: 11203
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 3
+  fields:
+    zipcode: 11204
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 4
+  fields:
+    zipcode: 11205
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 5
+  fields:
+    zipcode: 11206
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 6
+  fields:
+    zipcode: 11207
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 7
+  fields:
+    zipcode: 11208
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 8
+  fields:
+    zipcode: 11209
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 9
+  fields:
+    zipcode: 11210
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 10
+  fields:
+    zipcode: 11211
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 11
+  fields:
+    zipcode: 11212
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 12
+  fields:
+    zipcode: 11213
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 13
+  fields:
+    zipcode: 11214
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 14
+  fields:
+    zipcode: 11215
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 15
+  fields:
+    zipcode: 11216
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 16
+  fields:
+    zipcode: 11217
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 17
+  fields:
+    zipcode: 11218
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 18
+  fields:
+    zipcode: 11219
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 19
+  fields:
+    zipcode: 11220
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 20
+  fields:
+    zipcode: 11221
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 21
+  fields:
+    zipcode: 11222
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 22
+  fields:
+    zipcode: 11223
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 23
+  fields:
+    zipcode: 11224
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 24
+  fields:
+    zipcode: 11225
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 25
+  fields:
+    zipcode: 11226
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 26
+  fields:
+    zipcode: 11228
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 27
+  fields:
+    zipcode: 11229
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 28
+  fields:
+    zipcode: 11230
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 29
+  fields:
+    zipcode: 11231
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 30
+  fields:
+    zipcode: 11232
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 31
+  fields:
+    zipcode: 11233
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 32
+  fields:
+    zipcode: 11234
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 33
+  fields:
+    zipcode: 11235
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 34
+  fields:
+    zipcode: 11236
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 35
+  fields:
+    zipcode: 11237
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 36
+  fields:
+    zipcode: 11238
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 37
+  fields:
+    zipcode: 11239
+    borough: Brooklyn
+- model: bedroom.zipcode
+  pk: 38
+  fields:
+    zipcode: 10001
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 39
+  fields:
+    zipcode: 10002
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 40
+  fields:
+    zipcode: 10003
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 41
+  fields:
+    zipcode: 10004
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 42
+  fields:
+    zipcode: 10005
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 43
+  fields:
+    zipcode: 10006
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 44
+  fields:
+    zipcode: 10007
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 45
+  fields:
+    zipcode: 10009
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 46
+  fields:
+    zipcode: 10010
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 47
+  fields:
+    zipcode: 10011
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 48
+  fields:
+    zipcode: 10012
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 49
+  fields:
+    zipcode: 10013
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 50
+  fields:
+    zipcode: 10014
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 51
+  fields:
+    zipcode: 10016
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 52
+  fields:
+    zipcode: 10017
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 53
+  fields:
+    zipcode: 10018
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 54
+  fields:
+    zipcode: 10019
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 55
+  fields:
+    zipcode: 10020
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 56
+  fields:
+    zipcode: 10021
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 57
+  fields:
+    zipcode: 10022
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 58
+  fields:
+    zipcode: 10023
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 59
+  fields:
+    zipcode: 10024
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 60
+  fields:
+    zipcode: 10025
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 61
+  fields:
+    zipcode: 10026
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 62
+  fields:
+    zipcode: 10027
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 63
+  fields:
+    zipcode: 10028
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 64
+  fields:
+    zipcode: 10029
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 65
+  fields:
+    zipcode: 10030
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 66
+  fields:
+    zipcode: 10031
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 67
+  fields:
+    zipcode: 10032
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 68
+  fields:
+    zipcode: 10033
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 69
+  fields:
+    zipcode: 10034
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 70
+  fields:
+    zipcode: 10035
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 71
+  fields:
+    zipcode: 10036
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 72
+  fields:
+    zipcode: 10037
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 73
+  fields:
+    zipcode: 10038
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 74
+  fields:
+    zipcode: 10039
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 75
+  fields:
+    zipcode: 10040
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 76
+  fields:
+    zipcode: 10041
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 77
+  fields:
+    zipcode: 10044
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 78
+  fields:
+    zipcode: 10048
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 79
+  fields:
+    zipcode: 10069
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 80
+  fields:
+    zipcode: 10103
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 81
+  fields:
+    zipcode: 10111
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 82
+  fields:
+    zipcode: 10112
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 83
+  fields:
+    zipcode: 10115
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 84
+  fields:
+    zipcode: 10119
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 85
+  fields:
+    zipcode: 10128
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 86
+  fields:
+    zipcode: 10152
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 87
+  fields:
+    zipcode: 10153
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 88
+  fields:
+    zipcode: 10154
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 89
+  fields:
+    zipcode: 10162
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 90
+  fields:
+    zipcode: 10165
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 91
+  fields:
+    zipcode: 10167
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 92
+  fields:
+    zipcode: 10169
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 93
+  fields:
+    zipcode: 10170
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 94
+  fields:
+    zipcode: 10171
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 95
+  fields:
+    zipcode: 10172
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 96
+  fields:
+    zipcode: 10173
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 97
+  fields:
+    zipcode: 10177
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 98
+  fields:
+    zipcode: 10271
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 99
+  fields:
+    zipcode: 10278
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 100
+  fields:
+    zipcode: 10279
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 101
+  fields:
+    zipcode: 10280
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 102
+  fields:
+    zipcode: 10282
+    borough: Manhattan
+- model: bedroom.zipcode
+  pk: 103
+  fields:
+    zipcode: 11004
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 104
+  fields:
+    zipcode: 11101
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 105
+  fields:
+    zipcode: 11102
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 106
+  fields:
+    zipcode: 11103
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 107
+  fields:
+    zipcode: 11104
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 108
+  fields:
+    zipcode: 11105
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 109
+  fields:
+    zipcode: 11106
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 110
+  fields:
+    zipcode: 11354
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 111
+  fields:
+    zipcode: 11355
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 112
+  fields:
+    zipcode: 11356
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 113
+  fields:
+    zipcode: 11357
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 114
+  fields:
+    zipcode: 11358
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 115
+  fields:
+    zipcode: 11360
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 116
+  fields:
+    zipcode: 11361
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 117
+  fields:
+    zipcode: 11362
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 118
+  fields:
+    zipcode: 11363
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 119
+  fields:
+    zipcode: 11364
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 120
+  fields:
+    zipcode: 11365
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 121
+  fields:
+    zipcode: 11366
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 122
+  fields:
+    zipcode: 11367
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 123
+  fields:
+    zipcode: 11368
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 124
+  fields:
+    zipcode: 11369
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 125
+  fields:
+    zipcode: 11371
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 126
+  fields:
+    zipcode: 11372
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 127
+  fields:
+    zipcode: 11373
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 128
+  fields:
+    zipcode: 11374
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 129
+  fields:
+    zipcode: 11375
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 130
+  fields:
+    zipcode: 11377
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 131
+  fields:
+    zipcode: 11378
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 132
+  fields:
+    zipcode: 11379
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 133
+  fields:
+    zipcode: 11385
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 134
+  fields:
+    zipcode: 11411
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 135
+  fields:
+    zipcode: 11412
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 136
+  fields:
+    zipcode: 11413
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 137
+  fields:
+    zipcode: 11414
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 138
+  fields:
+    zipcode: 11415
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 139
+  fields:
+    zipcode: 11416
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 140
+  fields:
+    zipcode: 11417
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 141
+  fields:
+    zipcode: 11418
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 142
+  fields:
+    zipcode: 11419
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 143
+  fields:
+    zipcode: 11420
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 144
+  fields:
+    zipcode: 11421
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 145
+  fields:
+    zipcode: 11422
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 146
+  fields:
+    zipcode: 11423
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 147
+  fields:
+    zipcode: 11426
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 148
+  fields:
+    zipcode: 11427
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 149
+  fields:
+    zipcode: 11428
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 150
+  fields:
+    zipcode: 11429
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 151
+  fields:
+    zipcode: 11430
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 152
+  fields:
+    zipcode: 11432
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 153
+  fields:
+    zipcode: 11433
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 154
+  fields:
+    zipcode: 11434
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 155
+  fields:
+    zipcode: 11435
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 156
+  fields:
+    zipcode: 11436
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 157
+  fields:
+    zipcode: 11691
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 158
+  fields:
+    zipcode: 11692
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 159
+  fields:
+    zipcode: 11693
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 160
+  fields:
+    zipcode: 11694
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 161
+  fields:
+    zipcode: 11697
+    borough: Queens
+- model: bedroom.zipcode
+  pk: 162
+  fields:
+    zipcode: 10301
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 163
+  fields:
+    zipcode: 10302
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 164
+  fields:
+    zipcode: 10303
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 165
+  fields:
+    zipcode: 10304
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 166
+  fields:
+    zipcode: 10305
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 167
+  fields:
+    zipcode: 10306
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 168
+  fields:
+    zipcode: 10307
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 169
+  fields:
+    zipcode: 10308
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 170
+  fields:
+    zipcode: 10309
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 171
+  fields:
+    zipcode: 10310
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 172
+  fields:
+    zipcode: 10312
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 173
+  fields:
+    zipcode: 10314
+    borough: Staten Island
+- model: bedroom.zipcode
+  pk: 174
+  fields:
+    zipcode: 10451
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 175
+  fields:
+    zipcode: 10452
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 176
+  fields:
+    zipcode: 10453
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 177
+  fields:
+    zipcode: 10454
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 178
+  fields:
+    zipcode: 10455
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 179
+  fields:
+    zipcode: 10456
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 180
+  fields:
+    zipcode: 10457
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 181
+  fields:
+    zipcode: 10458
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 182
+  fields:
+    zipcode: 10459
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 183
+  fields:
+    zipcode: 10460
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 184
+  fields:
+    zipcode: 10461
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 185
+  fields:
+    zipcode: 10462
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 186
+  fields:
+    zipcode: 10463
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 187
+  fields:
+    zipcode: 10464
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 188
+  fields:
+    zipcode: 10465
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 189
+  fields:
+    zipcode: 10466
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 190
+  fields:
+    zipcode: 10467
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 191
+  fields:
+    zipcode: 10468
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 192
+  fields:
+    zipcode: 10469
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 193
+  fields:
+    zipcode: 10470
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 194
+  fields:
+    zipcode: 10471
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 195
+  fields:
+    zipcode: 10472
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 196
+  fields:
+    zipcode: 10473
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 197
+  fields:
+    zipcode: 10474
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 198
+  fields:
+    zipcode: 10475
+    borough: Bronx
+- model: bedroom.zipcode
+  pk: 199
+  fields:
+    zipcode: 11370
+    borough: Bronx

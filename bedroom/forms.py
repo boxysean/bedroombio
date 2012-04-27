@@ -1,7 +1,7 @@
 from django import forms
+from PIL import Image
 
-class UploadPictureForm(forms.Form):
-  picture = forms.ImageField()
+from django.core.exceptions import ValidationError
 
 class BedroomSubmitForm(forms.Form):
   picture_crop_x = forms.IntegerField()

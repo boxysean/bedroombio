@@ -23,8 +23,10 @@
     </div>
   </div>
 
+<div style="position: absolute; left: 500px; padding-top: 2em;">
   {% block content %}
   {% endblock %}
+</div>
 
 <!--  <script type="text/javascript">
 
@@ -42,8 +44,6 @@
 </script>-->
 
   <script src="{{STATIC_URL}}js/jquery.js"></script>
-  <script src="{{STATIC_URL}}js/bootstrap-modal.js"></script>
-  <script src="{{STATIC_URL}}js/bootstrap-transition.js"></script>
 
   {% block scripts %}
   {% endblock %}

@@ -2,56 +2,30 @@
 
 {% block content %}
 
-  <a data-toggle="modal" href="#myModal">
-    <div class="polaroid">
-      <img class="rounded" src="img/smaller/bed1.jpg" />
-      <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
+  {% for bedroom in bedrooms %}
+    <a data-toggle="modal" href="#pop" id="poplink{{ bedroom.pk }}">
+      <div class="polaroid">
+        <img class="rounded" src="{{STATIC_URL}}bedroom/small/{{ bedroom.image }}" />
+        <div class="clip"><em>{{ bedroom.zipcode }}</em> {{ bedroom.description }}</div>
+      </div>
+    </a>
+  {% endfor %}
+
+  <div class="modal hide fade" id="pop">
+    <img class="rounded" id="pop_image" />
+    <div class="modal-body">
+      <p><span id="pop_zip"></span><span id="pop_desc"></span></p>
+      <button class="btn" id="pop_prev">&larr;</button>
+      <button class="btn" data-dismiss="modal">&#x2716;</button>
+      <button class="btn" id="pop_next">&rarr;</button>
     </div>
-  </a>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed3.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-   <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed1.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed3.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-   <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed1.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-   <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed3.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
-  </div>
-  <div class="polaroid">
-    <img class="rounded" src="img/smaller/bed2.jpg" />
-    <p>Before they sold out sartorial pop-up, narwhal dreamcatcher bespoke mumblecore cliche.</p>
   </div>
 
+{% endblock %}
+
+{% block scripts %}
+  <script src="{{STATIC_URL}}js/bootstrap-modal.js"></script>
+  <script src="{{STATIC_URL}}js/bootstrap-transition.js"></script>
+  <script src="{{STATIC_URL}}js/showPictures.js"></script>
 {% endblock %}
 

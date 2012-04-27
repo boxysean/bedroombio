@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Submission result</h1>
+
+{% if fail %}
+<div class="alert alert-error">{{ fail }}</div>
+<p>Press the back button on your browser and try again.</p>
+{% endif %}
+
+{% if success %}
+<div class="alert alert-success">{{ success }}</div>
+<p>See the <a href="/">list of pictures</a>.</p>
+{% endif %}
+
+{% endblock %}
+

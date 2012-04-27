@@ -11,6 +11,9 @@ urlpatterns = patterns('',
     (r'^about$', 'bedroom.views.about'),
     (r'^submit/picture$', 'bedroom.views.upload_picture'),
     (r'^submit/bedroom$', 'bedroom.views.submit_bedroom'),
+    (r'^get/(?P<bedroom_id>\d+)$', 'bedroom.views.get_bedroom'),
+    (r'^getMaxId', 'bedroom.views.get_bedroom_max_id'),
+    (r'^submit/result$', 'bedroom.views.submit_result'),
 
 #    url(r'^help/$', direct_to_template, {'template': 'help.html'}),
 #

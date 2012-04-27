@@ -103,6 +103,7 @@
 			$("#picture_upload_display").hide();
 	                $("#picture_upload_crop_dialog").hide();
 			$("#picture_upload_placeholder").show();
+			$("#picture_upload_error").hide();
 
 			showSpinner("picture_upload_placeholder");
 
@@ -113,9 +114,10 @@
 				processData: false,
 				contentType: false,
 				success: function (res) {
-					$("#picture_upload_info").text(res["result"]); 
-					// TODO gracefully handle erorrs
-					if ("file" in res) {
+					if (res["result"] == "fail") {
+						$("#picture_upload_error").text(res["error"]).show();
+						spinner.stop();
+					} else if (res["result"] == "success") {
 						showUploadedItem(imageSource);
 						$("#picture_file").val(res["file"]);
 					}
