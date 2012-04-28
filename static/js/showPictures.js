@@ -32,7 +32,7 @@
 			contentType: false,
 			success: function (res) {
 				$("#pop_image").attr("src", res["image"]).load(function() {
-					$("#pop_zip").text(res["zipcode"])
+					$("#pop_zip").text(res["neighborhood"])
 					$("#pop_desc").text(res["description"]);
 				});
 			}
@@ -46,12 +46,12 @@
 	});
 
 	$("#pop_prev").click(function() {
-		prev();
+		next();
 		get(presentId);
 	});
 
 	$("#pop_next").click(function() {
-		next();
+		prev();
 		get(presentId);
 	});
 
@@ -61,11 +61,11 @@
 	
 		switch (keyCode) {
 		case arrow.left:
-			prev();
+			next();
 			get(presentId);
 			break;
 		case arrow.right:
-			next();
+			prev();
 			get(presentId);
 			break;
 		}

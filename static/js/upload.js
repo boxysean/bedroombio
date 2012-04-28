@@ -8,7 +8,6 @@
 		// Show loading elements
 
 		$("#picture_upload_placeholder").show();
-		$("#picture_upload_crop_dialog").hide();
 		spinner.spin();
 
 		// Add new image element
@@ -26,22 +25,21 @@
 			var newh = resizeRatio * h;
 			
 			var minw = 600.0 * resizeRatio;
-			var minh = newh * resizeRatio
+			var minh = newh * resizeRatio;
 
 			$("#picture_upload_placeholder").hide();
 			spinner.stop();
 
 			img.Jcrop({
 				aspectRatio: 4.0/3.0,
-				minSize: [minw, minh],
-				setSelect: [0, 0, minw, minh],
+				minSize: [minw/2, minh/2],
+				setSelect: [0, 0, minw/2, minh/2],
 				allowSelected: false,
 				onChange: updateCoords,
 				onSelect: updateCoords })
-			   .css("width", 600)
-			   .css("height", newh);
+			   .css("width", 300)
+			   .css("height", newh/2);
 
-			$("#picture_upload_crop_dialog").show();
 			$("#picture_upload_display").show();
 		});
 	}   
@@ -101,7 +99,6 @@
 	
 		if (formdata) {
 			$("#picture_upload_display").hide();
-	                $("#picture_upload_crop_dialog").hide();
 			$("#picture_upload_placeholder").show();
 			$("#picture_upload_error").hide();
 

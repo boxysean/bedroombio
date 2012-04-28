@@ -1,0 +1,1397 @@
+- model: bedroom.borough
+  pk: 1
+  fields:
+    name: Manhattan
+- model: bedroom.borough
+  pk: 2
+  fields:
+    name: Brooklyn
+- model: bedroom.borough
+  pk: 3
+  fields:
+    name: Queens
+- model: bedroom.borough
+  pk: 4
+  fields:
+    name: Bronx
+- model: bedroom.borough
+  pk: 5
+  fields:
+    name: Staten Island 
+
+
+- model: bedroom.neighborhood
+  pk: 1
+  fields:
+    borough: 1
+    name: Alphabet City
+- model: bedroom.neighborhood
+  pk: 2
+  fields:
+    borough: 1
+    name: Battery Park
+- model: bedroom.neighborhood
+  pk: 3
+  fields:
+    borough: 1
+    name: Chelsea
+- model: bedroom.neighborhood
+  pk: 4
+  fields:
+    borough: 1
+    name: Chinatown
+- model: bedroom.neighborhood
+  pk: 5
+  fields:
+    borough: 1
+    name: Civic Center
+- model: bedroom.neighborhood
+  pk: 6
+  fields:
+    borough: 1
+    name: East Harlem
+- model: bedroom.neighborhood
+  pk: 7
+  fields:
+    borough: 1
+    name: East Village
+- model: bedroom.neighborhood
+  pk: 8
+  fields:
+    borough: 1
+    name: Financial District
+- model: bedroom.neighborhood
+  pk: 9
+  fields:
+    borough: 1
+    name: Flatiron
+- model: bedroom.neighborhood
+  pk: 10
+  fields:
+    borough: 1
+    name: Gramercy
+- model: bedroom.neighborhood
+  pk: 11
+  fields:
+    borough: 1
+    name: Greenwich Village
+- model: bedroom.neighborhood
+  pk: 12
+  fields:
+    borough: 1
+    name: Harlem
+- model: bedroom.neighborhood
+  pk: 13
+  fields:
+    borough: 1
+    name: Hell's Kitchen
+- model: bedroom.neighborhood
+  pk: 14
+  fields:
+    borough: 1
+    name: Inwood
+- model: bedroom.neighborhood
+  pk: 15
+  fields:
+    borough: 1
+    name: Kips Bay
+- model: bedroom.neighborhood
+  pk: 16
+  fields:
+    borough: 1
+    name: Koreatown
+- model: bedroom.neighborhood
+  pk: 17
+  fields:
+    borough: 1
+    name: Little Italy
+- model: bedroom.neighborhood
+  pk: 18
+  fields:
+    borough: 1
+    name: Lower East Side
+- model: bedroom.neighborhood
+  pk: 19
+  fields:
+    borough: 1
+    name: Manhattan Valley
+- model: bedroom.neighborhood
+  pk: 20
+  fields:
+    borough: 1
+    name: Marble Hill
+- model: bedroom.neighborhood
+  pk: 21
+  fields:
+    borough: 1
+    name: Meatpacking District
+- model: bedroom.neighborhood
+  pk: 22
+  fields:
+    borough: 1
+    name: Midtown East
+- model: bedroom.neighborhood
+  pk: 23
+  fields:
+    borough: 1
+    name: Midtown West
+- model: bedroom.neighborhood
+  pk: 24
+  fields:
+    borough: 1
+    name: Morningside Heights
+- model: bedroom.neighborhood
+  pk: 25
+  fields:
+    borough: 1
+    name: Murray Hill
+- model: bedroom.neighborhood
+  pk: 26
+  fields:
+    borough: 1
+    name: NoHo
+- model: bedroom.neighborhood
+  pk: 27
+  fields:
+    borough: 1
+    name: Nolita
+- model: bedroom.neighborhood
+  pk: 28
+  fields:
+    borough: 1
+    name: Roosevelt Island
+- model: bedroom.neighborhood
+  pk: 29
+  fields:
+    borough: 1
+    name: SoHo
+- model: bedroom.neighborhood
+  pk: 30
+  fields:
+    borough: 1
+    name: South Street Seaport
+- model: bedroom.neighborhood
+  pk: 31
+  fields:
+    borough: 1
+    name: South Village
+- model: bedroom.neighborhood
+  pk: 32
+  fields:
+    borough: 1
+    name: Stuyvesant Town
+- model: bedroom.neighborhood
+  pk: 33
+  fields:
+    borough: 1
+    name: Theater District
+- model: bedroom.neighborhood
+  pk: 34
+  fields:
+    borough: 1
+    name: TriBeCa
+- model: bedroom.neighborhood
+  pk: 35
+  fields:
+    borough: 1
+    name: Two Bridges
+- model: bedroom.neighborhood
+  pk: 36
+  fields:
+    borough: 1
+    name: Union Square
+- model: bedroom.neighborhood
+  pk: 37
+  fields:
+    borough: 1
+    name: Upper East Side
+- model: bedroom.neighborhood
+  pk: 38
+  fields:
+    borough: 1
+    name: Upper West Side
+- model: bedroom.neighborhood
+  pk: 39
+  fields:
+    borough: 1
+    name: Washington Heights
+- model: bedroom.neighborhood
+  pk: 40
+  fields:
+    borough: 1
+    name: West Village
+- model: bedroom.neighborhood
+  pk: 41
+  fields:
+    borough: 1
+    name: Yorkville
+- model: bedroom.neighborhood
+  pk: 42
+  fields:
+    borough: 2
+    name: Bath Beach
+- model: bedroom.neighborhood
+  pk: 43
+  fields:
+    borough: 2
+    name: Bay Ridge
+- model: bedroom.neighborhood
+  pk: 44
+  fields:
+    borough: 2
+    name: Bedford Stuyvesant
+- model: bedroom.neighborhood
+  pk: 45
+  fields:
+    borough: 2
+    name: Bensonhurst
+- model: bedroom.neighborhood
+  pk: 46
+  fields:
+    borough: 2
+    name: Boerum Hill
+- model: bedroom.neighborhood
+  pk: 47
+  fields:
+    borough: 2
+    name: Borough Park
+- model: bedroom.neighborhood
+  pk: 48
+  fields:
+    borough: 2
+    name: Brighton Beach
+- model: bedroom.neighborhood
+  pk: 49
+  fields:
+    borough: 2
+    name: Brooklyn Heights
+- model: bedroom.neighborhood
+  pk: 50
+  fields:
+    borough: 2
+    name: Brownsville
+- model: bedroom.neighborhood
+  pk: 51
+  fields:
+    borough: 2
+    name: Bushwick
+- model: bedroom.neighborhood
+  pk: 52
+  fields:
+    borough: 2
+    name: Canarsie
+- model: bedroom.neighborhood
+  pk: 53
+  fields:
+    borough: 2
+    name: Carroll Gardens
+- model: bedroom.neighborhood
+  pk: 54
+  fields:
+    borough: 2
+    name: City Line
+- model: bedroom.neighborhood
+  pk: 55
+  fields:
+    borough: 2
+    name: Clinton Hill
+- model: bedroom.neighborhood
+  pk: 56
+  fields:
+    borough: 2
+    name: Cobble Hill
+- model: bedroom.neighborhood
+  pk: 57
+  fields:
+    borough: 2
+    name: Columbia Street Waterfront District
+- model: bedroom.neighborhood
+  pk: 58
+  fields:
+    borough: 2
+    name: Coney Island
+- model: bedroom.neighborhood
+  pk: 59
+  fields:
+    borough: 2
+    name: Crown Heights
+- model: bedroom.neighborhood
+  pk: 60
+  fields:
+    borough: 2
+    name: Cypress Hills
+- model: bedroom.neighborhood
+  pk: 61
+  fields:
+    borough: 2
+    name: Ditmas Park
+- model: bedroom.neighborhood
+  pk: 62
+  fields:
+    borough: 2
+    name: Downtown Brooklyn
+- model: bedroom.neighborhood
+  pk: 63
+  fields:
+    borough: 2
+    name: DUMBO
+- model: bedroom.neighborhood
+  pk: 64
+  fields:
+    borough: 2
+    name: Dyker Heights
+- model: bedroom.neighborhood
+  pk: 65
+  fields:
+    borough: 2
+    name: East Flatbush
+- model: bedroom.neighborhood
+  pk: 66
+  fields:
+    borough: 2
+    name: East New York
+- model: bedroom.neighborhood
+  pk: 67
+  fields:
+    borough: 2
+    name: East Williamsburg
+- model: bedroom.neighborhood
+  pk: 68
+  fields:
+    borough: 2
+    name: Flatbush
+- model: bedroom.neighborhood
+  pk: 69
+  fields:
+    borough: 2
+    name: Flatlands
+- model: bedroom.neighborhood
+  pk: 70
+  fields:
+    borough: 2
+    name: Fort Greene
+- model: bedroom.neighborhood
+  pk: 71
+  fields:
+    borough: 2
+    name: Fort Hamilton
+- model: bedroom.neighborhood
+  pk: 72
+  fields:
+    borough: 2
+    name: Georgetown
+- model: bedroom.neighborhood
+  pk: 73
+  fields:
+    borough: 2
+    name: Gerritson Beach
+- model: bedroom.neighborhood
+  pk: 74
+  fields:
+    borough: 2
+    name: Gowanus
+- model: bedroom.neighborhood
+  pk: 75
+  fields:
+    borough: 2
+    name: Gravesend
+- model: bedroom.neighborhood
+  pk: 76
+  fields:
+    borough: 2
+    name: Greenpoint
+- model: bedroom.neighborhood
+  pk: 77
+  fields:
+    borough: 2
+    name: Highland Park
+- model: bedroom.neighborhood
+  pk: 78
+  fields:
+    borough: 2
+    name: Kensington
+- model: bedroom.neighborhood
+  pk: 79
+  fields:
+    borough: 2
+    name: Manhattan Beach
+- model: bedroom.neighborhood
+  pk: 80
+  fields:
+    borough: 2
+    name: Marine Park
+- model: bedroom.neighborhood
+  pk: 81
+  fields:
+    borough: 2
+    name: Midwood
+- model: bedroom.neighborhood
+  pk: 82
+  fields:
+    borough: 2
+    name: Mill Basin
+- model: bedroom.neighborhood
+  pk: 83
+  fields:
+    borough: 2
+    name: Mill Island
+- model: bedroom.neighborhood
+  pk: 84
+  fields:
+    borough: 2
+    name: New Lots
+- model: bedroom.neighborhood
+  pk: 85
+  fields:
+    borough: 2
+    name: Ocean Hill
+- model: bedroom.neighborhood
+  pk: 86
+  fields:
+    borough: 2
+    name: Ocean Parkway
+- model: bedroom.neighborhood
+  pk: 87
+  fields:
+    borough: 2
+    name: Paedergat Basin
+- model: bedroom.neighborhood
+  pk: 88
+  fields:
+    borough: 2
+    name: Park Slope
+- model: bedroom.neighborhood
+  pk: 89
+  fields:
+    borough: 2
+    name: Prospect Heights
+- model: bedroom.neighborhood
+  pk: 90
+  fields:
+    borough: 2
+    name: Prospect Lefferts Gardens
+- model: bedroom.neighborhood
+  pk: 91
+  fields:
+    borough: 2
+    name: Prospect Park South
+- model: bedroom.neighborhood
+  pk: 92
+  fields:
+    borough: 2
+    name: Red Hook
+- model: bedroom.neighborhood
+  pk: 93
+  fields:
+    borough: 2
+    name: Remsen Village
+- model: bedroom.neighborhood
+  pk: 94
+  fields:
+    borough: 2
+    name: Sea Gate
+- model: bedroom.neighborhood
+  pk: 95
+  fields:
+    borough: 2
+    name: Sheepshead Bay
+- model: bedroom.neighborhood
+  pk: 96
+  fields:
+    borough: 2
+    name: South Williamsburg
+- model: bedroom.neighborhood
+  pk: 97
+  fields:
+    borough: 2
+    name: Spring Creek
+- model: bedroom.neighborhood
+  pk: 98
+  fields:
+    borough: 2
+    name: Starret City
+- model: bedroom.neighborhood
+  pk: 99
+  fields:
+    borough: 2
+    name: Sunset Park
+- model: bedroom.neighborhood
+  pk: 100
+  fields:
+    borough: 2
+    name: Vinegar Hill
+- model: bedroom.neighborhood
+  pk: 101
+  fields:
+    borough: 2
+    name: Weeksville
+- model: bedroom.neighborhood
+  pk: 102
+  fields:
+    borough: 2
+    name: Williamsburg
+- model: bedroom.neighborhood
+  pk: 103
+  fields:
+    borough: 2
+    name: Windsor Terrace
+- model: bedroom.neighborhood
+  pk: 104
+  fields:
+    borough: 2
+    name: Wingate
+- model: bedroom.neighborhood
+  pk: 105
+  fields:
+    borough: 3
+    name: Arverne
+- model: bedroom.neighborhood
+  pk: 106
+  fields:
+    borough: 3
+    name: Astoria
+- model: bedroom.neighborhood
+  pk: 107
+  fields:
+    borough: 3
+    name: Astoria Heights
+- model: bedroom.neighborhood
+  pk: 108
+  fields:
+    borough: 3
+    name: Auburndale
+- model: bedroom.neighborhood
+  pk: 109
+  fields:
+    borough: 3
+    name: Bay Terrace
+- model: bedroom.neighborhood
+  pk: 110
+  fields:
+    borough: 3
+    name: Bayside
+- model: bedroom.neighborhood
+  pk: 111
+  fields:
+    borough: 3
+    name: Beechurst
+- model: bedroom.neighborhood
+  pk: 112
+  fields:
+    borough: 3
+    name: Bellaire
+- model: bedroom.neighborhood
+  pk: 113
+  fields:
+    borough: 3
+    name: Belle Harbor
+- model: bedroom.neighborhood
+  pk: 114
+  fields:
+    borough: 3
+    name: Bellerose
+- model: bedroom.neighborhood
+  pk: 115
+  fields:
+    borough: 3
+    name: Breezy Point
+- model: bedroom.neighborhood
+  pk: 116
+  fields:
+    borough: 3
+    name: Briarwood
+- model: bedroom.neighborhood
+  pk: 117
+  fields:
+    borough: 3
+    name: Cambria Heights
+- model: bedroom.neighborhood
+  pk: 118
+  fields:
+    borough: 3
+    name: College Point
+- model: bedroom.neighborhood
+  pk: 119
+  fields:
+    borough: 3
+    name: Douglaston
+- model: bedroom.neighborhood
+  pk: 120
+  fields:
+    borough: 3
+    name: Downtown Flushing
+- model: bedroom.neighborhood
+  pk: 121
+  fields:
+    borough: 3
+    name: East Elmhurst
+- model: bedroom.neighborhood
+  pk: 122
+  fields:
+    borough: 3
+    name: Edgemere
+- model: bedroom.neighborhood
+  pk: 123
+  fields:
+    borough: 3
+    name: Elmhurst
+- model: bedroom.neighborhood
+  pk: 124
+  fields:
+    borough: 3
+    name: Far Rockaway
+- model: bedroom.neighborhood
+  pk: 125
+  fields:
+    borough: 3
+    name: Floral Park
+- model: bedroom.neighborhood
+  pk: 126
+  fields:
+    borough: 3
+    name: Flushing
+- model: bedroom.neighborhood
+  pk: 127
+  fields:
+    borough: 3
+    name: Flushing Meadows
+- model: bedroom.neighborhood
+  pk: 128
+  fields:
+    borough: 3
+    name: Forest Hills
+- model: bedroom.neighborhood
+  pk: 129
+  fields:
+    borough: 3
+    name: Fresh Meadows
+- model: bedroom.neighborhood
+  pk: 130
+  fields:
+    borough: 3
+    name: Glen Oaks
+- model: bedroom.neighborhood
+  pk: 131
+  fields:
+    borough: 3
+    name: Glendale
+- model: bedroom.neighborhood
+  pk: 132
+  fields:
+    borough: 3
+    name: Hillcrest
+- model: bedroom.neighborhood
+  pk: 133
+  fields:
+    borough: 3
+    name: Hollis
+- model: bedroom.neighborhood
+  pk: 134
+  fields:
+    borough: 3
+    name: Holliswood
+- model: bedroom.neighborhood
+  pk: 135
+  fields:
+    borough: 3
+    name: Howard Beach
+- model: bedroom.neighborhood
+  pk: 136
+  fields:
+    borough: 3
+    name: Hunters Point
+- model: bedroom.neighborhood
+  pk: 137
+  fields:
+    borough: 3
+    name: Jackson Heights
+- model: bedroom.neighborhood
+  pk: 138
+  fields:
+    borough: 3
+    name: Jamaica
+- model: bedroom.neighborhood
+  pk: 139
+  fields:
+    borough: 3
+    name: Jamaica Estates
+- model: bedroom.neighborhood
+  pk: 140
+  fields:
+    borough: 3
+    name: Jamaica Hills
+- model: bedroom.neighborhood
+  pk: 141
+  fields:
+    borough: 3
+    name: JFK Airport
+- model: bedroom.neighborhood
+  pk: 142
+  fields:
+    borough: 3
+    name: Kew Gardens
+- model: bedroom.neighborhood
+  pk: 143
+  fields:
+    borough: 3
+    name: Kew Gardens Hills
+- model: bedroom.neighborhood
+  pk: 144
+  fields:
+    borough: 3
+    name: LaGuardia Airport
+- model: bedroom.neighborhood
+  pk: 145
+  fields:
+    borough: 3
+    name: Laurelton
+- model: bedroom.neighborhood
+  pk: 146
+  fields:
+    borough: 3
+    name: LeFrak City
+- model: bedroom.neighborhood
+  pk: 147
+  fields:
+    borough: 3
+    name: Lindenwood
+- model: bedroom.neighborhood
+  pk: 148
+  fields:
+    borough: 3
+    name: Little Neck
+- model: bedroom.neighborhood
+  pk: 149
+  fields:
+    borough: 3
+    name: Long Island City
+- model: bedroom.neighborhood
+  pk: 150
+  fields:
+    borough: 3
+    name: Malba
+- model: bedroom.neighborhood
+  pk: 151
+  fields:
+    borough: 3
+    name: Maspeth
+- model: bedroom.neighborhood
+  pk: 152
+  fields:
+    borough: 3
+    name: Middle Village
+- model: bedroom.neighborhood
+  pk: 153
+  fields:
+    borough: 3
+    name: Murray Hill
+- model: bedroom.neighborhood
+  pk: 154
+  fields:
+    borough: 3
+    name: North Corona
+- model: bedroom.neighborhood
+  pk: 155
+  fields:
+    borough: 3
+    name: Oakland Gardens
+- model: bedroom.neighborhood
+  pk: 156
+  fields:
+    borough: 3
+    name: Ozone Park
+- model: bedroom.neighborhood
+  pk: 157
+  fields:
+    borough: 3
+    name: Pomonok
+- model: bedroom.neighborhood
+  pk: 158
+  fields:
+    borough: 3
+    name: Queens Village
+- model: bedroom.neighborhood
+  pk: 159
+  fields:
+    borough: 3
+    name: Queensborough Hill
+- model: bedroom.neighborhood
+  pk: 160
+  fields:
+    borough: 3
+    name: Rego Park
+- model: bedroom.neighborhood
+  pk: 161
+  fields:
+    borough: 3
+    name: Richmond Hill
+- model: bedroom.neighborhood
+  pk: 162
+  fields:
+    borough: 3
+    name: Ridgewood
+- model: bedroom.neighborhood
+  pk: 163
+  fields:
+    borough: 3
+    name: Rochdale
+- model: bedroom.neighborhood
+  pk: 164
+  fields:
+    borough: 3
+    name: Rockaway Park
+- model: bedroom.neighborhood
+  pk: 165
+  fields:
+    borough: 3
+    name: Rosedale
+- model: bedroom.neighborhood
+  pk: 166
+  fields:
+    borough: 3
+    name: Seaside
+- model: bedroom.neighborhood
+  pk: 167
+  fields:
+    borough: 3
+    name: Somerville
+- model: bedroom.neighborhood
+  pk: 168
+  fields:
+    borough: 3
+    name: Springfield Gardens
+- model: bedroom.neighborhood
+  pk: 169
+  fields:
+    borough: 3
+    name: Steinway
+- model: bedroom.neighborhood
+  pk: 170
+  fields:
+    borough: 3
+    name: Sunnyside
+- model: bedroom.neighborhood
+  pk: 171
+  fields:
+    borough: 3
+    name: Utopia
+- model: bedroom.neighborhood
+  pk: 172
+  fields:
+    borough: 3
+    name: Whitestone
+- model: bedroom.neighborhood
+  pk: 173
+  fields:
+    borough: 3
+    name: Woodhaven
+- model: bedroom.neighborhood
+  pk: 174
+  fields:
+    borough: 3
+    name: Woodside
+- model: bedroom.neighborhood
+  pk: 175
+  fields:
+    borough: 4
+    name: Baychester
+- model: bedroom.neighborhood
+  pk: 176
+  fields:
+    borough: 4
+    name: Bedford Park
+- model: bedroom.neighborhood
+  pk: 177
+  fields:
+    borough: 4
+    name: Belmont
+- model: bedroom.neighborhood
+  pk: 178
+  fields:
+    borough: 4
+    name: Castle Hill
+- model: bedroom.neighborhood
+  pk: 179
+  fields:
+    borough: 4
+    name: City Island
+- model: bedroom.neighborhood
+  pk: 180
+  fields:
+    borough: 4
+    name: Claremont Village
+- model: bedroom.neighborhood
+  pk: 181
+  fields:
+    borough: 4
+    name: Clason Point
+- model: bedroom.neighborhood
+  pk: 182
+  fields:
+    borough: 4
+    name: Co-op City
+- model: bedroom.neighborhood
+  pk: 183
+  fields:
+    borough: 4
+    name: Concourse
+- model: bedroom.neighborhood
+  pk: 184
+  fields:
+    borough: 4
+    name: Concourse Village
+- model: bedroom.neighborhood
+  pk: 185
+  fields:
+    borough: 4
+    name: Country Club
+- model: bedroom.neighborhood
+  pk: 186
+  fields:
+    borough: 4
+    name: East Tremont
+- model: bedroom.neighborhood
+  pk: 187
+  fields:
+    borough: 4
+    name: Eastchester
+- model: bedroom.neighborhood
+  pk: 188
+  fields:
+    borough: 4
+    name: Edenwald
+- model: bedroom.neighborhood
+  pk: 189
+  fields:
+    borough: 4
+    name: Edgewater Park
+- model: bedroom.neighborhood
+  pk: 190
+  fields:
+    borough: 4
+    name: Fieldston
+- model: bedroom.neighborhood
+  pk: 191
+  fields:
+    borough: 4
+    name: Fordham
+- model: bedroom.neighborhood
+  pk: 192
+  fields:
+    borough: 4
+    name: High Bridge
+- model: bedroom.neighborhood
+  pk: 193
+  fields:
+    borough: 4
+    name: Hunts Point
+- model: bedroom.neighborhood
+  pk: 194
+  fields:
+    borough: 4
+    name: Kingsbridge
+- model: bedroom.neighborhood
+  pk: 195
+  fields:
+    borough: 4
+    name: Longwood
+- model: bedroom.neighborhood
+  pk: 196
+  fields:
+    borough: 4
+    name: Melrose
+- model: bedroom.neighborhood
+  pk: 197
+  fields:
+    borough: 4
+    name: Morris Heights
+- model: bedroom.neighborhood
+  pk: 198
+  fields:
+    borough: 4
+    name: Morris Park
+- model: bedroom.neighborhood
+  pk: 199
+  fields:
+    borough: 4
+    name: Morrisania
+- model: bedroom.neighborhood
+  pk: 200
+  fields:
+    borough: 4
+    name: Mott Haven
+- model: bedroom.neighborhood
+  pk: 201
+  fields:
+    borough: 4
+    name: Mount Eden
+- model: bedroom.neighborhood
+  pk: 202
+  fields:
+    borough: 4
+    name: Mount Hope
+- model: bedroom.neighborhood
+  pk: 203
+  fields:
+    borough: 4
+    name: North Riverdale
+- model: bedroom.neighborhood
+  pk: 204
+  fields:
+    borough: 4
+    name: Norwood
+- model: bedroom.neighborhood
+  pk: 205
+  fields:
+    borough: 4
+    name: Olinville
+- model: bedroom.neighborhood
+  pk: 206
+  fields:
+    borough: 4
+    name: Parkchester
+- model: bedroom.neighborhood
+  pk: 207
+  fields:
+    borough: 4
+    name: Pelham Bay
+- model: bedroom.neighborhood
+  pk: 208
+  fields:
+    borough: 4
+    name: Pelham Gardens
+- model: bedroom.neighborhood
+  pk: 209
+  fields:
+    borough: 4
+    name: Port Morris
+- model: bedroom.neighborhood
+  pk: 210
+  fields:
+    borough: 4
+    name: Riverdale
+- model: bedroom.neighborhood
+  pk: 211
+  fields:
+    borough: 4
+    name: Schuylerville
+- model: bedroom.neighborhood
+  pk: 212
+  fields:
+    borough: 4
+    name: Soundview
+- model: bedroom.neighborhood
+  pk: 213
+  fields:
+    borough: 4
+    name: Spuyten Duyvil
+- model: bedroom.neighborhood
+  pk: 214
+  fields:
+    borough: 4
+    name: Throgs Neck
+- model: bedroom.neighborhood
+  pk: 215
+  fields:
+    borough: 4
+    name: Unionport
+- model: bedroom.neighborhood
+  pk: 216
+  fields:
+    borough: 4
+    name: University Heights
+- model: bedroom.neighborhood
+  pk: 217
+  fields:
+    borough: 4
+    name: Van Nest
+- model: bedroom.neighborhood
+  pk: 218
+  fields:
+    borough: 4
+    name: Wakefield
+- model: bedroom.neighborhood
+  pk: 219
+  fields:
+    borough: 4
+    name: West Farms
+- model: bedroom.neighborhood
+  pk: 220
+  fields:
+    borough: 4
+    name: Westchester Square
+- model: bedroom.neighborhood
+  pk: 221
+  fields:
+    borough: 4
+    name: Williamsbridge
+- model: bedroom.neighborhood
+  pk: 222
+  fields:
+    borough: 4
+    name: Woodlawn
+- model: bedroom.neighborhood
+  pk: 223
+  fields:
+    borough: 5
+    name: Annadale
+- model: bedroom.neighborhood
+  pk: 224
+  fields:
+    borough: 5
+    name: Arden Heights
+- model: bedroom.neighborhood
+  pk: 225
+  fields:
+    borough: 5
+    name: Arlington
+- model: bedroom.neighborhood
+  pk: 226
+  fields:
+    borough: 5
+    name: Arrochar
+- model: bedroom.neighborhood
+  pk: 227
+  fields:
+    borough: 5
+    name: Bay Terrace
+- model: bedroom.neighborhood
+  pk: 228
+  fields:
+    borough: 5
+    name: Bloomfield
+- model: bedroom.neighborhood
+  pk: 229
+  fields:
+    borough: 5
+    name: Bullshead
+- model: bedroom.neighborhood
+  pk: 230
+  fields:
+    borough: 5
+    name: Castleton Corners
+- model: bedroom.neighborhood
+  pk: 231
+  fields:
+    borough: 5
+    name: Charleston
+- model: bedroom.neighborhood
+  pk: 232
+  fields:
+    borough: 5
+    name: Chelsea
+- model: bedroom.neighborhood
+  pk: 233
+  fields:
+    borough: 5
+    name: Clifton
+- model: bedroom.neighborhood
+  pk: 234
+  fields:
+    borough: 5
+    name: Concord
+- model: bedroom.neighborhood
+  pk: 235
+  fields:
+    borough: 5
+    name: Dongan Hills
+- model: bedroom.neighborhood
+  pk: 236
+  fields:
+    borough: 5
+    name: Elm Park
+- model: bedroom.neighborhood
+  pk: 237
+  fields:
+    borough: 5
+    name: Eltingville
+- model: bedroom.neighborhood
+  pk: 238
+  fields:
+    borough: 5
+    name: Emerson Hill
+- model: bedroom.neighborhood
+  pk: 239
+  fields:
+    borough: 5
+    name: Graniteville
+- model: bedroom.neighborhood
+  pk: 240
+  fields:
+    borough: 5
+    name: Grant City
+- model: bedroom.neighborhood
+  pk: 241
+  fields:
+    borough: 5
+    name: Grasmere
+- model: bedroom.neighborhood
+  pk: 242
+  fields:
+    borough: 5
+    name: Great Kills
+- model: bedroom.neighborhood
+  pk: 243
+  fields:
+    borough: 5
+    name: Grymes Hill
+- model: bedroom.neighborhood
+  pk: 244
+  fields:
+    borough: 5
+    name: Heartland Village
+- model: bedroom.neighborhood
+  pk: 245
+  fields:
+    borough: 5
+    name: Howland Hook
+- model: bedroom.neighborhood
+  pk: 246
+  fields:
+    borough: 5
+    name: Huguenot
+- model: bedroom.neighborhood
+  pk: 247
+  fields:
+    borough: 5
+    name: Lighthouse Hill
+- model: bedroom.neighborhood
+  pk: 248
+  fields:
+    borough: 5
+    name: Mariner
+- model: bedroom.neighborhood
+  pk: 249
+  fields:
+    borough: 5
+    name: Midland Beach
+- model: bedroom.neighborhood
+  pk: 250
+  fields:
+    borough: 5
+    name: New Brighton
+- model: bedroom.neighborhood
+  pk: 251
+  fields:
+    borough: 5
+    name: New Dorp
+- model: bedroom.neighborhood
+  pk: 252
+  fields:
+    borough: 5
+    name: New Dorp Beach
+- model: bedroom.neighborhood
+  pk: 253
+  fields:
+    borough: 5
+    name: New Springville
+- model: bedroom.neighborhood
+  pk: 254
+  fields:
+    borough: 5
+    name: Oakwood
+- model: bedroom.neighborhood
+  pk: 255
+  fields:
+    borough: 5
+    name: Old Town
+- model: bedroom.neighborhood
+  pk: 256
+  fields:
+    borough: 5
+    name: Park Hill
+- model: bedroom.neighborhood
+  pk: 257
+  fields:
+    borough: 5
+    name: Pleasant Plains
+- model: bedroom.neighborhood
+  pk: 258
+  fields:
+    borough: 5
+    name: Port Richmond
+- model: bedroom.neighborhood
+  pk: 259
+  fields:
+    borough: 5
+    name: Princes Bay
+- model: bedroom.neighborhood
+  pk: 260
+  fields:
+    borough: 5
+    name: Randall Manor
+- model: bedroom.neighborhood
+  pk: 261
+  fields:
+    borough: 5
+    name: Richmond Town
+- model: bedroom.neighborhood
+  pk: 262
+  fields:
+    borough: 5
+    name: Richmond Valley
+- model: bedroom.neighborhood
+  pk: 263
+  fields:
+    borough: 5
+    name: Rosebank
+- model: bedroom.neighborhood
+  pk: 264
+  fields:
+    borough: 5
+    name: Rossville
+- model: bedroom.neighborhood
+  pk: 265
+  fields:
+    borough: 5
+    name: Shore Acres
+- model: bedroom.neighborhood
+  pk: 266
+  fields:
+    borough: 5
+    name: Silver Lake
+- model: bedroom.neighborhood
+  pk: 267
+  fields:
+    borough: 5
+    name: St. George
+- model: bedroom.neighborhood
+  pk: 268
+  fields:
+    borough: 5
+    name: Stapleton
+- model: bedroom.neighborhood
+  pk: 269
+  fields:
+    borough: 5
+    name: Sunnyside
+- model: bedroom.neighborhood
+  pk: 270
+  fields:
+    borough: 5
+    name: Todt Hill
+- model: bedroom.neighborhood
+  pk: 271
+  fields:
+    borough: 5
+    name: Tompkinsville
+- model: bedroom.neighborhood
+  pk: 272
+  fields:
+    borough: 5
+    name: Tottenville
+- model: bedroom.neighborhood
+  pk: 273
+  fields:
+    borough: 5
+    name: West Brighton
+- model: bedroom.neighborhood
+  pk: 274
+  fields:
+    borough: 5
+    name: Westerleigh
+- model: bedroom.neighborhood
+  pk: 275
+  fields:
+    borough: 5
+    name: Woodrow

@@ -5,50 +5,37 @@
 {% endblock %}
 
 {% block content %}
-  <h2>Add your bedroom</h2>
+  <h1>Add your bedroom</h1>
 
-  <form class="form-horizontal" method="post" enctype="multipart/form-data"  action="/submit/picture">
-    <fieldset>
-<!--      <legend>Legend text</legend>-->
-      <div class="control-group">
-        <label class="control-label" for="picture_upload">Bedroom picture</label>
-        <div class="controls">
-          <input class="input-file" id="picture_upload" type="file" />
-          <span id="picture_upload_info"></span>
-          <div class="alert alert-error" id="picture_upload_error" style="display:none"></div>
-          <div id="picture_upload_display" style="display:none"></div>
-          <div id="picture_upload_placeholder"></div>
-          <div class="alert alert-info" id="picture_upload_crop_dialog" style="display:none">Please crop your photo</div>
-        </div>
-      </div>
-    </fieldset>
+  <form method="post" enctype="multipart/form-data"  action="/submit/picture">
+    <p>Your bedroom photo</p>
+    <input id="picture_upload" type="file" />
+    <div class="alert alert-error" id="picture_upload_error" style="display:none"></div>
+    <div id="picture_upload_display" style="display:none"></div>
+    <div id="picture_upload_placeholder"></div>
+    <button class="btn" id="picture_upload_crop_btn" onclick="return false;">Crop photo</button>
   </form>
 
-  <form class="form-horizontal" method="post" action="/submit/bedroom">
-   <fieldset>
-      <input type="hidden" id="picture_file" name="picture_file" />
-      <input type="hidden" id="picture_crop_x" name="picture_crop_x" />
-      <input type="hidden" id="picture_crop_y" name="picture_crop_y" />
-      <input type="hidden" id="picture_crop_w" name="picture_crop_w" />
-      <input type="hidden" id="picture_crop_h" name="picture_crop_h" />
-      <div class="control-group">
-        <label class="control-label" for="about">About your bedroom</label>
-        <div class="controls">
-          <textarea class="span8" id="description" name="description" rows="5"></textarea>
-          <span class="help-block" id="description_remaining"></span>
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label" for="zipcode">Your zip code</label>
-        <div class="controls">
-          <input type="text" class="span2" id="zipcode" name="zipcode" />
-          <span class="help-block">New York City zip codes only</span>
-        </div>
-    </div>
-    <div class="form-actions">
-      <button type="submit" class="btn btn-primary">Submit my room</button>
-    </div>
-    </fieldset>
+  <form method="post" action="/submit/bedroom">
+    <input type="hidden" id="picture_file" name="picture_file" />
+    <input type="hidden" id="picture_crop_x" name="picture_crop_x" />
+    <input type="hidden" id="picture_crop_y" name="picture_crop_y" />
+    <input type="hidden" id="picture_crop_w" name="picture_crop_w" />
+    <input type="hidden" id="picture_crop_h" name="picture_crop_h" />
+
+    <label for="about">About your bedroom</label>
+    <textarea class="span6" id="description" name="description" rows="6"></textarea>
+    <span class="help-block" id="description_remaining"></span>
+
+    <label for="neighborhood">Your neighborhood</label>
+    <select class="span4" id="neighborhood" name="neighborhood">
+      {% for neighborhood in neighborhoods %}
+      <option value="{{ neighborhood.pk }}">{{ neighborhood.name }}</option>
+      {% endfor %}
+    </select>
+    <span class="help-block">New York City neighborhoods only</span>
+
+    <button type="submit" class="btn btn-primary">Submit my room</button>
   </form>
 {% endblock %}
 

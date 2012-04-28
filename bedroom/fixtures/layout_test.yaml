@@ -3,7 +3,7 @@
   fields:
     created: 2012-03-25 11:00:00
     description: "Leggings stumptown veniam, forage 3 wolf moon occupy cray echo park tumblr pitchfork chambray delectus assumenda. Eiusmod freegan nulla blog cillum. Veniam banh mi sriracha artisan kale chips, wolf fixie organic. Bushwick exercitation fingerstache"
-    zipcode: 1
+    neighborhood: 1
     image: bed1.jpg
     viewable: True
 
@@ -12,7 +12,7 @@
   fields:
     created: 2012-03-25 12:00:00
     description: "Deserunt culpa kogi velit non, dolore 3 wolf moon before they sold out semiotics trust fund jean shorts nulla artisan. Fap keytar mcsweeney's, dreamcatcher brooklyn pariatur chambray. Mumblecore +1 photo booth williamsburg PBR, wes anderson sartorial"
-    zipcode: 21
+    neighborhood: 21
     image: bed2.jpg
     viewable: True
 
@@ -21,7 +21,7 @@
   fields:
     created: 2012-03-25 13:00:00
     description: "Banh mi organic raw denim wolf cray. Craft beer forage yr, sartorial ullamco mollit quis aute sunt pickled squid lo-fi. Labore VHS gluten-free dolore, bespoke sed occupy. Esse leggings consectetur, qui salvia reprehenderit sint four loko."
-    zipcode: 41
+    neighborhood: 41
     image: bed3.jpg
     viewable: True
 
@@ -30,7 +30,7 @@
   fields:
     created: 2012-03-25 14:00:00
     description: "Freegan readymade chambray DIY, et dreamcatcher sunt minim. Scenester williamsburg gentrify, +1 pinterest exercitation pork belly mollit retro farm-to-table. Qui accusamus swag fixie assumenda bespoke deserunt tattooed godard, nisi hoodie ad organic."
-    zipcode: 61
+    neighborhood: 61
     image: bed4.jpg
     viewable: True
 
@@ -39,7 +39,7 @@
   fields:
     created: 2012-03-25 15:00:00
     description: "Letterpress fugiat aute, put a bird on it retro id minim. Brunch fanny pack cliche, laboris selvage sustainable quinoa raw denim 8-bit esse adipisicing sapiente seitan. Excepteur truffaut messenger bag wayfarers, odio banh mi cosby sweater twee duis"
-    zipcode: 81
+    neighborhood: 81
     image: bed5.jpg
     viewable: True
 
@@ -48,7 +48,7 @@
   fields:
     created: 2012-03-25 16:00:00
     description: "Gluten-free occupy helvetica, artisan ennui nulla exercitation godard do odd future tattooed sapiente flexitarian marfa. Before they sold out american apparel salvia, wes anderson fingerstache veniam carles enim vice kogi seitan stumptown gastropub"
-    zipcode: 101
+    neighborhood: 101
     image: bed6.jpg
     viewable: True
 

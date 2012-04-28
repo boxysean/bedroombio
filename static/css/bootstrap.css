@@ -134,7 +134,7 @@ body {
   margin: 0;
   font-family: "Futura", "Ubuntu";
   font-size: 14pt;
-  line-height: 18px;
+  line-height: 27px;
   color: #ffffff;
   background: #333333 url('../img/topleft-graphic.png') no-repeat left top;
 }
@@ -321,10 +321,10 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 9px;
+  margin: 0 0 18px;
   font-family: "Futura", "Ubuntu";
   font-size: 14pt;
-  line-height: 18px;
+  line-height: 25.2px;
 }
 p small {
   font-size: 12pt;
@@ -342,7 +342,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+  margin: 0 0 .5em 0;
   font-family: inherit;
   font-weight: bold;
   color: inherit;
@@ -1180,6 +1180,9 @@ legend + .control-group {
 }
 .form-horizontal .form-actions {
   padding-left: 210px;
+}
+label {
+  margin-bottom: 0.5em;
 }
 table {
   max-width: 100%;
@@ -4061,8 +4064,8 @@ a.thumbnail:hover {
   margin-top: 20px;
 }
 #picture_upload_placeholder {
-  margin-top: 20px;
-  width: 600px;
+  margin: 20px 0;
+  width: 300px;
   height: 200px;
   background: #333;
   border: 5px solid #000;
@@ -4071,10 +4074,7 @@ a.thumbnail:hover {
   border-radius: 20px;
 }
 #crop_image {
-  width: 600px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  border-radius: 20px;
+  width: 300px;
 }
 .clip {
   overflow: hidden;
@@ -4083,13 +4083,16 @@ a.thumbnail:hover {
   line-height: 18px;
   padding: 10px 10px 0 10px;
 }
-#pop_desc {
-  line-height: 27px;
-}
-#description {
+#pop_desc,
+#description,
+#neighborhood {
   line-height: 27px;
 }
 #pop_zip {
   font-style: italic;
   padding-right: 1em;
+}
+.well {
+  background-color: transparent;
+  border-color: transparent;
 }

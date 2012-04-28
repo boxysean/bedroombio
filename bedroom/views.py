@@ -3,7 +3,7 @@ from django.template import RequestContext
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 
 from forms import BedroomSubmitForm
-from models import Bedroom, ZipCode
+from models import Bedroom, BedroomView, Neighborhood
 
 import uuid, os, json, Image
 
@@ -14,11 +14,12 @@ import logging
 logger = logging.getLogger(__name__)
 
 def home(request):
-  bedrooms = Bedroom.objects.all()
+  bedrooms = Bedroom.objects.all().order_by("-created")
   return render_to_response("home.html", {"bedrooms": bedrooms}, context_instance=RequestContext(request))
 
 def submit(request):
-  return render_to_response("submit.html", locals(), context_instance=RequestContext(request))
+  neighborhoods = Neighborhood.objects.all().order_by("name")
+  return render_to_response("submit.html", {"neighborhoods": neighborhoods}, context_instance=RequestContext(request))
 
 def about(request):
   return render_to_response("about.html", locals(), context_instance=RequestContext(request))
@@ -38,7 +39,7 @@ def upload_picture(request):
       destination.close()
       
       # check dimensions
-  
+     
       image = Image.open(path)
       imw, imh = image.size
   
@@ -52,7 +53,7 @@ def upload_picture(request):
       return HttpResponse(json.dumps(response_data), mimetype="application/json")
   except:
     response_data["result"] = "fail"
-    response_data["error"] = "Server Error. Try again later."
+    response_data["error"] = "Server error. Try again later."
     return HttpResponse(json.dumps(response_data), mimetype="application/json")
   
   raise Http404
@@ -62,15 +63,14 @@ def submit_bedroom(request):
     response = {}
     form = BedroomSubmitForm(request.POST, request.FILES)
 
-    required_fields = ["picture_file", "picture_crop_x", "picture_crop_y", "picture_crop_w", "picture_crop_h", "description", "zipcode"]
+    required_fields = ["picture_file", "picture_crop_x", "picture_crop_y", "picture_crop_w", "picture_crop_h", "description", "neighborhood"]
 
     for rf in required_fields:
-      logger.debug(rf)
       if rf not in request.POST or len(request.POST[rf]) == 0:
         return HttpResponseRedirect("/submit/result?error=invalid_form")
 
     try:
-      zipcode = ZipCode.objects.get(zipcode=int(request.POST["zipcode"]))
+      neighborhood = Neighborhood.objects.get(pk=int(request.POST["neighborhood"]))
     except:
       return HttpResponseRedirect("/submit/result?error=nyc_only")
 
@@ -86,10 +86,10 @@ def submit_bedroom(request):
         # resize it
   
         filename = request.POST["picture_file"]
-        x1 = int(request.POST["picture_crop_x"])
-        y1 = int(request.POST["picture_crop_y"])
-        x2 = x1 + int(request.POST["picture_crop_w"])
-        y2 = y1 + int(request.POST["picture_crop_h"])
+        x1 = int(request.POST["picture_crop_x"]) * 2
+        y1 = int(request.POST["picture_crop_y"]) * 2
+        x2 = x1 + (int(request.POST["picture_crop_w"]) * 2)
+        y2 = y1 + (int(request.POST["picture_crop_h"]) * 2)
         image = Image.open(os.path.join(settings.IMAGE_UPLOAD_FOLDER, filename))
         imw, imh = image.size
         image = image.resize((600, int(600.0 / imw * imh)), Image.ANTIALIAS)
@@ -99,19 +99,22 @@ def submit_bedroom(request):
         image = image.resize((220, 146), Image.ANTIALIAS) 
         image.save(os.path.join(settings.BEDROOM_PICTURE_FOLDER, "small", filename + ".jpg"))
   
-        bedroom = Bedroom(description=description, zipcode=zipcode, image=filename + ".jpg", viewable=True)
+        bedroom = Bedroom(description=description, neighborhood=neighborhood, image=filename + ".jpg", viewable=True)
         bedroom.save()
         return HttpResponseRedirect("/submit/result?success")
       else:
         return HttpResponseRedirect("/submit/result?error=invalid_form")
-    except:
+    except Exception, e:
+      logger.error(e)
       return HttpResponseRedirect("/submit/result?error=server_error")
   
   return render_to_response("submission_result.html", locals(), context_instance=RequestContext(request))
 
 def get_bedroom(request, bedroom_id):
   bedroom = Bedroom.objects.get(pk=bedroom_id)
-  response_data = {"description": bedroom.description, "image": settings.STATIC_URL + "bedroom/large/" + bedroom.image, "zipcode": bedroom.zipcode.__str__()}
+  response_data = {"description": bedroom.description, "image": settings.STATIC_URL + "bedroom/large/" + bedroom.image, "neighborhood": bedroom.neighborhood.name}
+  bedroomView = BedroomView(bedroom=bedroom)
+  bedroomView.save()
   return HttpResponse(json.dumps(response_data), mimetype="application/json")
 
 def get_bedroom_max_id(request):
