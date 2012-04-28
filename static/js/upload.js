@@ -23,23 +23,23 @@
 			var w = this.width;
 			var h = this.height;
 
-			var resizeRatio = 600.0 / w;
+			var resizeRatio = 300.0 / w;
 			var newh = resizeRatio * h;
 			
-			var minw = 600.0 * resizeRatio;
+			var minw = 300.0 * resizeRatio;
 			var minh = newh * resizeRatio;
 
 			$("#picture_upload_placeholder").hide();
 			spinner.stop();
 
 			img.css("width", 300)
-			   .css("height", newh/2);
+			   .css("height", newh);
 
 			jcropApi = $.Jcrop("#picture_upload_img");
 			jcropApi.setOptions({
-				aspectRatio: 4.0/3.0,
-				minSize: [minw/2, minh/2],
-				setSelect: [0, 0, minw/2, minh/2],
+				aspectRatio: 3.0/2.0,
+				minSize: [minw, minh],
+				setSelect: [0, 0, minw, minh],
 				allowSelected: false,
 				onChange: updateCoords,
 				onSelect: updateCoords });
@@ -51,8 +51,8 @@
 	function updateCoords(c) {
 		$("#picture_crop_x").val(c.x);
 		$("#picture_crop_y").val(c.y);
-		$("#picture_crop_w").val(c.w);
-		$("#picture_crop_h").val(c.h);
+		$("#picture_crop_x2").val(c.x2);
+		$("#picture_crop_y2").val(c.y2);
 	}
 
 	function showSpinner(target) {

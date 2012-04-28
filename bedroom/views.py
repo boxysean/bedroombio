@@ -15,11 +15,15 @@ logger = logging.getLogger(__name__)
 
 def home(request):
   bedrooms = Bedroom.objects.all().order_by("-created")
-  return render_to_response("home.html", {"bedrooms": bedrooms}, context_instance=RequestContext(request))
+  d = locals()
+  d["bedrooms"] = bedrooms
+  return render_to_response("home.html", d, context_instance=RequestContext(request))
 
 def submit(request):
   neighborhoods = Neighborhood.objects.all().order_by("name")
-  return render_to_response("submit.html", {"neighborhoods": neighborhoods}, context_instance=RequestContext(request))
+  d = locals()
+  d["neighborhoods"] = neighborhoods
+  return render_to_response("submit.html", d, context_instance=RequestContext(request))
 
 def about(request):
   return render_to_response("about.html", locals(), context_instance=RequestContext(request))
@@ -51,9 +55,10 @@ def upload_picture(request):
       response_data["result"] = "success"
       response_data["file"] = filename
       return HttpResponse(json.dumps(response_data), mimetype="application/json")
-  except:
+  except Exception, e:
     response_data["result"] = "fail"
     response_data["error"] = "Server error. Try again later."
+    logger.error(e)
     return HttpResponse(json.dumps(response_data), mimetype="application/json")
   
   raise Http404
@@ -63,7 +68,7 @@ def submit_bedroom(request):
     response = {}
     form = BedroomSubmitForm(request.POST, request.FILES)
 
-    required_fields = ["picture_file", "picture_crop_x", "picture_crop_y", "picture_crop_w", "picture_crop_h", "description", "neighborhood"]
+    required_fields = ["picture_file", "picture_crop_x", "picture_crop_y", "picture_crop_x2", "picture_crop_y2", "description", "neighborhood"]
 
     for rf in required_fields:
       if rf not in request.POST or len(request.POST[rf]) == 0:
@@ -81,22 +86,30 @@ def submit_bedroom(request):
     elif len(description) > 250:
       description = description[0:250]
 
-    if int(form["picture_crop_w"].value()) < 500/2 or int(form["picture_crop_h"].value()) < 300/2:
-      return HttpResponseRedirect("/submit/result?error=cropping")
-
     try:
       if form.is_valid(): 
         # resize it
   
         filename = request.POST["picture_file"]
-        x1 = int(request.POST["picture_crop_x"]) * 2
-        y1 = int(request.POST["picture_crop_y"]) * 2
-        x2 = x1 + (int(request.POST["picture_crop_w"]) * 2)
-        y2 = y1 + (int(request.POST["picture_crop_h"]) * 2)
+        x1 = int(request.POST["picture_crop_x"])
+        y1 = int(request.POST["picture_crop_y"])
+        x2 = int(request.POST["picture_crop_x2"])
+        y2 = int(request.POST["picture_crop_y2"])
+
         image = Image.open(os.path.join(settings.IMAGE_UPLOAD_FOLDER, filename))
         imw, imh = image.size
-        image = image.resize((600, int(600.0 / imw * imh)), Image.ANTIALIAS)
-        image = image.crop((x1, y1, x2, y2))
+
+        imratio = 300.0 / imw # 300 is the width of the crop photo test
+
+        x1p = x1 / imratio
+        y1p = y1 / imratio
+        x2p = x2 / imratio
+        y2p = y2 / imratio
+
+        if (x2p-x1p) < 600 or (y2p-y1p) < 400:
+          return HttpResponseRedirect("/submit/result?error=cropping")
+
+        image = image.crop((x1p, y1p, x2p, y2p))
         image = image.resize((600, 400), Image.ANTIALIAS) 
         image.save(os.path.join(settings.BEDROOM_PICTURE_FOLDER, "large", filename + ".jpg"))
         image = image.resize((220, 146), Image.ANTIALIAS) 
@@ -106,6 +119,7 @@ def submit_bedroom(request):
         bedroom.save()
         return HttpResponseRedirect("/submit/result?success")
       else:
+        logger.debug("fell through to here");
         return HttpResponseRedirect("/submit/result?error=invalid_form")
     except Exception, e:
       logger.error(e)
