@@ -81,8 +81,11 @@ def submit_bedroom(request):
     elif len(description) > 250:
       description = description[0:250]
 
+    if int(form["picture_crop_w"].value()) < 500/2 or int(form["picture_crop_h"].value()) < 300/2:
+      return HttpResponseRedirect("/submit/result?error=cropping")
+
     try:
-      if form.is_valid():
+      if form.is_valid(): 
         # resize it
   
         filename = request.POST["picture_file"]
@@ -136,6 +139,8 @@ def submit_result(request):
       res["fail"] = "All fields are required."
     elif fail == "server_error":
       res["fail"] = "Server error. Please try again later."
+    elif fail == "cropping":
+      res["fail"] = "Please select a crop area."
     elif fail == "enter_desc":
       res["fail"] = "Please enter text into the response field."
 

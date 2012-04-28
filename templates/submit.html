@@ -11,9 +11,9 @@
     <p>Your bedroom photo</p>
     <input id="picture_upload" type="file" />
     <div class="alert alert-error" id="picture_upload_error" style="display:none"></div>
-    <div id="picture_upload_display" style="display:none"></div>
+    <div id="picture_upload_display" style="display:none; width: 300"></div>
     <div id="picture_upload_placeholder"></div>
-    <button class="btn" id="picture_upload_crop_btn" onclick="return false;">Crop photo</button>
+    <button class="btn" id="picture_crop_button" onclick="return false;">Crop photo</button>
   </form>
 
   <form method="post" action="/submit/bedroom">
@@ -28,14 +28,14 @@
     <span class="help-block" id="description_remaining"></span>
 
     <label for="neighborhood">Your neighborhood</label>
-    <select class="span4" id="neighborhood" name="neighborhood">
+    <select class="span5" id="neighborhood" name="neighborhood">
       {% for neighborhood in neighborhoods %}
-      <option value="{{ neighborhood.pk }}">{{ neighborhood.name }}</option>
+      <option value="{{ neighborhood.pk }}">{{ neighborhood.name }} ({{ neighborhood.borough.name }})</option>
       {% endfor %}
     </select>
     <span class="help-block">New York City neighborhoods only</span>
 
-    <button type="submit" class="btn btn-primary">Submit my room</button>
+    <button type="submit" class="btn">Submit my room</button>
   </form>
 {% endblock %}
 
@@ -43,5 +43,6 @@
   <script src="{{STATIC_URL}}js/upload.js"></script>
   <script src="{{STATIC_URL}}js/spin.min.js"></script>
   <script src="{{STATIC_URL}}js/jquery.Jcrop.min.js"></script>
+  <script src="{{STATIC_URL}}js/jquery.ba-dotimeout.min.js"></script>
 {% endblock %}
 

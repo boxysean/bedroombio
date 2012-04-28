@@ -4022,8 +4022,8 @@ a.thumbnail:hover {
   -khtml-border-radius: 10px;
 }
 .sidebar {
-  padding: 400px 0 100px;
-  width: 480px;
+  padding: 280px 0 100px;
+  width: 450px;
   float: left;
 }
 .main {
@@ -4061,10 +4061,10 @@ a.thumbnail:hover {
   background: #333333 url('../img/topleft-graphic.png') no-repeat left top;
 }
 #picture_upload_display {
-  margin-top: 20px;
+  margin: 20px 0;
 }
 #picture_upload_placeholder {
-  margin: 20px 0;
+  margin-bottom: 20px;
   width: 300px;
   height: 200px;
   background: #333;

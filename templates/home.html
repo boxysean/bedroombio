@@ -6,7 +6,7 @@
     <a data-toggle="modal" href="#pop" id="poplink{{ bedroom.pk }}">
       <div class="polaroid">
         <img class="rounded" src="{{STATIC_URL}}bedroom/small/{{ bedroom.image }}" />
-        <div class="clip"><em>{{ bedroom.zipcode.borough }}</em> {{ bedroom.description }}</div>
+        <div class="clip"><em>{{ bedroom.neighborhood.name }}</em> {{ bedroom.description }}</div>
       </div>
     </a>
   {% endfor %}

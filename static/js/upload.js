@@ -3,6 +3,8 @@
 	var imageSource = null;
 	var spinner = null;
 	var first = true;
+	var jcropApi = null;
+	var cropped = false;
 
 	function showUploadedItem(source) {
 		// Show loading elements
@@ -14,7 +16,7 @@
 
 		$("#picture_upload_display").empty();
 
-		var img = $("<img/>", { "src": source });
+		var img = $("<img/>", { "src": source, "id": "picture_upload_img" });
 		img.appendTo("#picture_upload_display");
 
 		img.load(function() {
@@ -30,15 +32,17 @@
 			$("#picture_upload_placeholder").hide();
 			spinner.stop();
 
-			img.Jcrop({
+			img.css("width", 300)
+			   .css("height", newh/2);
+
+			jcropApi = $.Jcrop("#picture_upload_img");
+			jcropApi.setOptions({
 				aspectRatio: 4.0/3.0,
 				minSize: [minw/2, minh/2],
 				setSelect: [0, 0, minw/2, minh/2],
 				allowSelected: false,
 				onChange: updateCoords,
-				onSelect: updateCoords })
-			   .css("width", 300)
-			   .css("height", newh/2);
+				onSelect: updateCoords });
 
 			$("#picture_upload_display").show();
 		});
@@ -53,10 +57,10 @@
 
 	function showSpinner(target) {
 		var opts = {
-		  lines: 13, // The number of lines to draw
-		  length: 7, // The length of each line
-		  width: 2, // The line thickness
-		  radius: 5, // The radius of the inner circle
+		  lines: 15, // The number of lines to draw
+		  length: 9, // The length of each line
+		  width: 3, // The line thickness
+		  radius: 7, // The radius of the inner circle
 		  rotate: 0, // The rotation offset
 		  color: '#FFF', // #rgb or #rrggbb
 		  speed: 1, // Rounds per second
@@ -69,7 +73,7 @@
 		  left: 'auto' // Left position relative to parent in px
 		};
 		var target = document.getElementById(target);
-		spinner = new Spinner(opts).spin(target);
+		return new Spinner(opts).spin(target);
 	}
 
 	if (window.FormData) {
@@ -102,7 +106,7 @@
 			$("#picture_upload_placeholder").show();
 			$("#picture_upload_error").hide();
 
-			showSpinner("picture_upload_placeholder");
+			spinner = showSpinner("picture_upload_placeholder");
 
 			$.ajax({
 				url: "/submit/picture",
@@ -121,6 +125,15 @@
 				}
 			});
 		}
+	});
+
+	$("#picture_crop_button").click(function() {
+		if (cropped) {
+			jcropApi.enable();
+		} else {
+			jcropApi.disable();
+		}
+		cropped = !cropped;
 	});
 }());
 
